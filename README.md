@@ -2,7 +2,8 @@
 
 # Bem vindo, este é meu primeiro portifólio.
 
-![image](https://drive.google.com/file/d/1bJ3ljWrVN0uJVd918zDmduMKbWKnmRBA/view)
+![Inicial](https://user-images.githubusercontent.com/83550425/218233485-d2dfbff7-9e4b-42e3-9784-830ac0acd1a2.png)
+
 
 ### Ferramentas utilizadas:
 

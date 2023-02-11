@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+/* home */
+/******************* cabecalho *************** */
+.cabecalho{
+    background-color: #000000;
+    border-bottom: 2px solid #22D4FD ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cabecalho__menu__logo{
+    text-align: center;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 150%;
+}
+
+
+.cabecalho__menu{
+    margin: 0 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    /* height: 80px; */
+    /* gap: 80px; */
+}
+
+.cabecalho__menu__link{
+    align-self: center;
+    text-decoration: none;
+    color: #22D4FD;
+    padding: 1.7rem;
+}
+
+.cabecalho__menu__link:hover{
+    background-color: #22D4FD;
+    color: #272727;
+}
+
+/************ fim do cabeçalho *****************/
+
+
+.container{
+    padding: 5% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 75px;
+}
+.container__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: justify;
+}
+
+.container__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+.container__conteudo__tituloDestaque{
+    color: var(--cor-terciaria);
+}
+.container__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.container__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.container__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+.container__links__navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+.container__links__navegacao:hover{
+    background-color: var(--cor-hover);
+}
+
+.container__img{
+    width: 50%;
+}
+
+/************ rodape           ****************/
+
+.rodape {
+    background-color: #22D4FD;
+    padding: 1.5rem;
+    color: #000000;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+/************ fim do rodape *****************/
+
+
+/************ pagina about me **************/
+.container__about {
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+    padding: 5% 0%;
+}
+
+.container__about__titulo{
+    margin-bottom: 2.5rem;
+}
+
+.container__about__descricao {
+    text-align: justify;
+    margin-right: 6rem;
+}
+
+.container__about__descricao p{
+    text-indent: 1.5rem;
+    margin-bottom: 10%;
+}
+
+.styledImg {
+    width: 20.5rem;
+    height: 25.25rem;
+}
+
+/* Fim do about me */
+
+
+/* Responsividade até 1200px */
+
+@media (max-width: 1200px){
+    .cabecalho__menu{
+        justify-content: space-between;
+    }
+
+
+    .container{
+        flex-direction: column-reverse;
+        padding: 10% 5%;
+    }
+
+    .container__conteudo{
+        width: auto;
+    }
+}
+
+/* Responsividade mobile */
+
+@media (max-width: 450px){
+    .cabecalho__menu{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .cabecalho__menu__link{
+        padding: 1rem;
+    }
+
+    .container{
+        gap: 70px;
+        padding: 20% 8%;
+    }
+    
+
+    .container__conteudo{
+        width: 100%;
+        padding: 5% 2%;
+        gap: 40px;
+    }
+
+    .container__conteudo__titulo {
+        font-size: 1.5trem;
+    }
+    .container__conteudo__tituloDestaque{
+        font-size: 2rem;
+    }
+
+    .container__conteudo__texto{
+        font-size: 1.325rem;
+        width: 100%;
+    }
+
+    .container__links {
+        gap: 1.2rem;
+
+    }
+
+    .container__links__subtitulo {
+        width: 100%;
+        font-size: 1.325rem;
+    }
+
+    .container__links__navegacao {
+        width: 100%;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+
+}

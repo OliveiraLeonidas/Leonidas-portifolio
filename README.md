@@ -2,7 +2,7 @@
 
 # Bem vindo, este é meu primeiro portifólio.
 
-![image]{https://drive.google.com/file/d/1bJ3ljWrVN0uJVd918zDmduMKbWKnmRBA/view}
+![image](https://drive.google.com/file/d/1bJ3ljWrVN0uJVd918zDmduMKbWKnmRBA/view)
 
 ### Ferramentas utilizadas:
 

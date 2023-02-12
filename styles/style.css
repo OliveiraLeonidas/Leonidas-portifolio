@@ -43,10 +43,10 @@ body {
 
 
 .cabecalho__menu{
-    margin: 0 8%;
+    margin: 0 6%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     
     /* height: 80px; */
     /* gap: 80px; */
@@ -150,6 +150,7 @@ body {
     justify-content: center;
     /* height: 100vh; */
     padding: 5% 0%;
+    gap: 82px;
 }
 
 .container__about__titulo{
@@ -158,7 +159,7 @@ body {
 
 .container__about__descricao {
     text-align: justify;
-    margin-right: 6rem;
+    width: 50%;
 }
 
 .container__about__descricao p{
@@ -166,17 +167,24 @@ body {
     margin-bottom: 10%;
 }
 
-.styledImg {
-    width: 20.5rem;
-    height: 25.25rem;
+/* Fim do about me */
+
+/* Inicio Projects */
+
+main.container__project{
+    height: 100vh;
+
 }
 
-/* Fim do about me */
+
+
+/* Fim Projects */
 
 
 /* Responsividade até 1200px */
 
 @media (max-width: 1200px){
+    /* Main Page */
     .cabecalho__menu{
         justify-content: space-between;
     }
@@ -190,6 +198,21 @@ body {
     .container__conteudo{
         width: auto;
     }
+
+    /* About */
+    
+    .container__about{
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+
+    .container__about__descricao{
+        width: 100%;
+    }
+
+    
+
 }
 
 /* Responsividade mobile */
